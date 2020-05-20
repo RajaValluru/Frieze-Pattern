@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="229.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="friezepattern.StartController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Slider fx:id="ss" layoutX="80.0" layoutY="80.0" onMouseDragged="#slided" onMousePressed="#sliderPressed" onMouseReleased="#sliderReleased" prefHeight="17.0" prefWidth="180.0" />
+      <Label fx:id="sides" layoutX="276.0" layoutY="69.0" text="3">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="triangulate" layoutX="88.0" layoutY="129.0" mnemonicParsing="false" onAction="#createPolygon" prefHeight="60.0" prefWidth="164.0" text="Create Polygon">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="107.0" layoutY="56.0" text="Number of Sides">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" prefHeight="23.0" prefWidth="242.0" text="Mathematical Frieze">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
